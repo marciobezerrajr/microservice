@@ -1,0 +1,11 @@
+services:
+  pg:
+    image: bitnami/postgresql:latest
+    ports:
+      - '5482:5432'
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=orders
+    volumes: #roda os scripts sql da pasta docker asism que sobe o container
+      - ./docker:/docker-entrypoint-initdb.d

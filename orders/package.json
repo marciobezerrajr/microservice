@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node --experimental-strip-types --watch --no-warnings src/http/server.ts",
-    "start": "node --experimental-strip-types --no-warnings src/http/server.ts"
+    "dev": "node --env-file=.env --experimental-strip-types --watch --no-warnings src/http/server.ts",
+    "start": "node --env-file=.env --experimental-strip-types --no-warnings src/http/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,10 +14,13 @@
   "dependencies": {
     "@fastify/cors": "^11.1.0",
     "@tsconfig/node22": "^22.0.2",
+    "@types/amqplib": "^0.10.7",
+    "amqplib": "^0.10.9",
     "drizzle-orm": "^0.44.5",
     "fastify": "^5.5.0",
     "fastify-type-provider-zod": "^5.0.3",
     "pg": "^8.16.3",
+    "postgres": "^3.4.7",
     "zod": "^4.1.2"
   },
   "devDependencies": {

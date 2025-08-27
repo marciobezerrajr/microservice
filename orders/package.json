@@ -13,6 +13,7 @@
   "type": "module",
   "dependencies": {
     "@fastify/cors": "^11.1.0",
+    "@opentelemetry/api": "^1.9.0",
     "@tsconfig/node22": "^22.0.2",
     "@types/amqplib": "^0.10.7",
     "amqplib": "^0.10.9",
@@ -24,6 +25,9 @@
     "zod": "^4.1.2"
   },
   "devDependencies": {
+    "@opentelemetry/auto-instrumentations-node": "^0.62.1",
+    "@opentelemetry/sdk-node": "^0.203.0",
+    "@opentelemetry/sdk-trace-node": "^2.0.1",
     "@types/node": "^24.3.0",
     "drizzle-kit": "^0.31.4",
     "typescript": "^5.9.2"

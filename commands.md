@@ -5,3 +5,6 @@ docker run -p 3333:3333 service-orders
 ## gera o sql com base no schema e migra o banco de dados
 npx drizzle-kit generate
 npx drizzle-kit migrate
+
+pulumi new aws-typescript
+pulumi up/down

@@ -21,9 +21,7 @@
     "fastify-type-provider-zod": "^5.0.3",
     "pg": "^8.16.3",
     "postgres": "^3.4.7",
-    "zod": "^4.1.2"
-  },
-  "devDependencies": {
+    "zod": "^4.1.2",
     "@opentelemetry/auto-instrumentations-node": "^0.62.1",
     "@opentelemetry/sdk-node": "^0.203.0",
     "@opentelemetry/sdk-trace-node": "^2.0.1",
